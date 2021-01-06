@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>Weather App JS</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <input
+          type="text"
+          autocomplete="off"
+          class="search-box"
+          placeholder="Search for a city..."
+          data-search
+        />
+      </header>
+      <main>
+        <section class="location">
+          <div class="location__city" data-city>
+            Enter a location to find the weather
+          </div>
+          <div class="location__date" data-date></div>
+        </section>
+        <div class="current" data-current-section>
+          <div class="current__temp" data-temp>°c</div>
+          <div class="detailed--section">
+            <div class="detail">
+              <div class="current__weather--title">Wind</div>
+              <div class="current__details" data-wind>TBD</div>
+            </div>
+            <div class="detail bordered">
+              <div class="current__weather--title">L / H</div>
+              <div class="current__details" data-low-high>TBD</div>
+            </div>
+            <div class="detail">
+              <div class="current__weather--title">Description</div>
+              <div class="current__details" data-condition>TBD</div>
+              <div class="current__details img" data-icon>TBD</div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <a class="link" href="https://openweathermap.org/" target="_blank"
+        >Powered by OpenWeather</a
+      >
+    </div>
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
